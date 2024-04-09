@@ -1,0 +1,44 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flip-container">
+            <div class="flipper" id="flipper">
+                <div class="front login">
+                    <h2>Login</h2>
+                    <form action="/login" method="post">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username"><br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password"><br><br>
+                        <input type="submit" value="Login">
+                    </form>
+                    <p>Don't have an account? <a href="#" id="flipToRegister">Register here</a>.</p>
+                </div>
+                <div class="back register">
+                    <h2>Register</h2>
+                    <form action="/register" method="post">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password"><br><br>
+                        <input type="submit" value="Register">
+                    </form>
+                    <p>Already have an account? <a href="#" id="flipToLogin">Login here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
